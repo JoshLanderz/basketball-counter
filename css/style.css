@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background-image: url('../Images/eduard-delputte-YLmCyMofG6s-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    height: 100vh;
+    font-family: var(--Montserrat);
+}
+
+:root {
+    --Montserrat: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    gap: 1em;
+    background-color: midnightblue;
+    padding: 2em; 
+    position: relative;
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+
+.home-section, .guest-section {
+    display: grid;
+    gap: 1em;
+}
+
+.home, .guest {
+    color: white;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#home-score, #guest-score {
+    text-align: center;
+    background-color: black;
+    color: crimson;
+    margin-top: 0;
+    margin-bottom: 15px; 
+    font-size: 30px; 
+    padding: 15px;
+}
+
+.home-btns, .guest-btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-btns button, .guest-btns button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+.home-btns button:hover, .guest-btns button:hover {
+    background-color: white;
+    color: blue;
+    transition: linear 0.2s;
+}
+
+#new-game {
+    border: none;
+    padding: 15px;
+    padding-inline: 1em;
+    font-size: 20px;
+    cursor: pointer;
+    transition: linear 0.2s;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+#new-game:hover {
+    transition: linear 0.2s;
+    filter: contrast(90%);
+}
+
+/*#timer {
+    color: black;
+    background-color: #eee;
+    padding: 10px;
+    padding-inline: 2em;
+    border-radius: 125px;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}*/

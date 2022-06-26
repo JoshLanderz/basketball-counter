@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Watson - Baskeball Counter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="home-section">
+            <h1 class="home">HOME</h1>
+            <h1 id="home-score">0</h1>
+            <div class="home-btns">
+            <button id="home-add1" onclick="homeadd1()">+1</button>
+            <button id="home-add2" onclick="homeadd2()">+2</button>
+            <button id="home-add3" onclick="homeadd3()">+3</button>
+            </div>
+        </div>
+        <div class="guest-section">
+            <h1 class="guest">GUEST</h1>
+            <h1 id="guest-score">0</h1>
+            <div class="guest-btns">
+            <button id="guest-add1" onclick="guestadd1()">+1</button>
+            <button id="guest-add2" onclick="guestadd2()">+2</button>
+            <button id="guest-add3" onclick="guestadd3()">+3</button>                
+            </div>    
+        </div>
+        <button id="new-game" onclick="newGame()">New Game</button> 
+            <!--<p id="timer">TIME: 30s</p>-->
+            <script src="index.js"></script>
+    </div>  
+</body>
+</html>
